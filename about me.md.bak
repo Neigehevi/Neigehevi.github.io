@@ -5,12 +5,7 @@ layout: py
 permalink: about.html
 ---
 ![Hevidesu](https://wx1.sinaimg.cn/large/77d03d67ly1g9su1i4anoj215o0nvb2b.jpg)
-<iframe 
- frameborder="no" border="0" 
- marginwidth="0" marginheight="0" 
- width=530 height=110
- src="//music.163.com/outchain/player?type=2&id=501655&auto=0&height=430">
-</iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=4444 height=52 src="//music.163.com/outchain/player?type=2&id=501655&auto=1&height=32"></iframe>
 <h2>关于我</h2>
 <h4>介绍</h4>
 这里是<font color='red'>Neigehevi</font>，一般用<font color='red'>Hevi</font>居多.
