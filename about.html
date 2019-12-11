@@ -3,7 +3,7 @@
 
 <head>
   
-  <title>闲云遮月 清风袭花</title>
+  <title>about me - 闲云遮月 清风袭花</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -12,10 +12,12 @@
 
   <link rel="shortcut icon" href="/images/favicon32.ico" type="image/png" />
   <meta property="og:type" content="website">
-<meta property="og:title" content="闲云遮月 清风袭花">
-<meta property="og:url" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;index.html">
+<meta property="og:title" content="about me">
+<meta property="og:url" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;about.html">
 <meta property="og:site_name" content="闲云遮月 清风袭花">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-12-11T06:20:25.000Z">
+<meta property="article:modified_time" content="2019-12-11T06:25:41.402Z">
 <meta property="article:author" content="Neigehevi">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
@@ -25,7 +27,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1576046559580">
+  <link rel="stylesheet" href="/css/style.css?v=1576046559561">
 <meta name="generator" content="Hexo 4.1.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -119,32 +121,75 @@
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        <section class="nexmoe-posts" id="brand-waterfall">
+        <style>
+  article ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -5px;
+  }
+  article ul li {
+    transition: all .03s;
+    width: calc(12.5% - 10px);
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    font-size: 0;
+    overflow: hidden;
+  }
+  article ul li > a::after {
+    font-size: 13px;
+    color: #606266;
+    -webkit-transition: none;
+    transition: none;
+    content: attr(title);
+    display: block;
+    position: relative;
+    width: 100%;
+    border: none;
+    padding: 3px 10px 5px 10px;
+    margin-top: -2px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  article ul li img {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    height: calc(100% - 30px);
+  }
+  @media screen and (max-width: 768px) {
+    article ul li {
+      width: calc(33.3333333333% - 10px);
+    }
+}
+</style>
+
+<div class="nexmoe-post">
+  <article class="nexmoe-py">
     
-    <div class="nexmoe-post">
-        <a href="/2019/12/10/%E6%AC%A2%E8%BF%8E/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                    <img src="https://wx4.sinaimg.cn/mw690/77d03d67ly1g9srqrgoh3j20yw0lqh8q.jpg" alt="欢迎">
-                
-                <h1>欢迎</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年12月10日</a>
-            <a><i class="nexmoefont icon-areachart"></i>0 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-            
-        </div>
-        <article>
-            
-            
-            
-        </article>
-    </div>
-    
+  </article>
+  <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '05f065921d9ced88ef43',
+        clientSecret: '7a276455d86fc9052666bdddf411ef81e1d8c097',
+        id: window.location.pathname,
+        repo: 'Neigehevi.github.io',
+        owner: 'Neigehevi',
+        admin: 'Neigehevi'
+    })
+    gitalk.render('gitalk')
+</script>
 </section>
+</div>
 
     </div>
   </div>
@@ -161,7 +206,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1576046559581"></script>
+<script src="/js/app.js?v=1576046559563"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
