@@ -9,12 +9,12 @@ permalink: about.html
 <h2>关于我</h2>
 <h4>介绍</h4>
 
-<ul>
+<ol>
     <li>这里是<font color='red'>Neigehevi</font>，一般用<font color='red'>Hevi</font>居多。</li>
     <li>喜欢玩些游戏，小时候最喜欢的洛克人系列，<font color='red'>火焰纹章</font>系列和宝可梦系列，现在可能<font color='red'>ADV</font>接触的比较多。</li>
     <li>偶尔看看电影，动画和电视剧。 </li>
     <li>觉得萨摩耶很帅气，<font color='red'>柯基</font>很蠢萌。</li>
-</ul>
+</ol>
 
 <h4>联系邮箱</h4>
 <font color='red'>Neigehevi@qq.com</font>
