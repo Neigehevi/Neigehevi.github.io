@@ -1,0 +1,130 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>*{
+    margin:0px;
+    padding:0;
+}
+body{
+    font-size: 16px;
+    color:#fff;
+}
+#container{
+    width: 900px;
+    margin: 0 auto;
+}
+#header{
+    height: 200px;
+    margin-bottom: 5px;
+}
+#nav{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    background-color: #c0c0c0;
+    font-size: 18px/30px; 
+    /* font-size: 0; */
+    color:#fff;
+    letter-spacing: 2px;
+    text-align: center;
+}
+/* a{
+    display: inline-block;
+    font-size: 18px; 
+    color:#fff;
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom: 1px solid #636363;
+} */
+a:link{
+    color: aqua;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(0, 162, 255);
+    text-decoration: none;
+}
+a:active{
+    color: rgb(255, 0, 221);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(255, 0, 149);
+    text-decoration: none;
+}
+#main{
+    background-color: #000;
+}
+#aside{
+    float: left;
+    width: 250px;
+    height: 2200px;
+    background-color: #f5cee3;
+    text-align: center;
+    font-size:16px;
+    margin-right:5px;
+}
+#imglist{
+    width: 150px;
+    margin: 0 auto;
+}
+.pol{
+    width: 150px;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #bfbfbf;
+    box-shadow: 2px 2px 4px #aaa;
+    border-radius: 5px;
+}
+.rotate-left{
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+.rotate-right{
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+#imglist img{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+#content{
+    float: left;
+    width: 645px;
+    height: 2200px;
+    background-color: #D1D1D1;
+    margin-bottom:5px;
+}
+.subcon{
+    width: 570px;
+    margin: 10px auto;
+    clear: both;
+}
+.subcon img{
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    border: 1px dashed #000;
+}
+.subcon .subtext{
+    width: 60%;
+    margin:5px;
+    float: left;
+}
+.subcon h3{
+    margin: 5px;
+}
+.subcon p{
+    font: 16px/2em;
+}
+#footer{
+    height: 60px;
+    line-height: 60px;
+    background-color: #a9deee;
+    clear: both;
+    text-align: center;
+}
