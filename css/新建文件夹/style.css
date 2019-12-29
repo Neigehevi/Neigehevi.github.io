@@ -496,11 +496,11 @@ article pre {
   box-sizing: border-box;
   margin: 20px 0;
   position: relative;
-  background: rgba(255,192,203,0.5);
+  background: #282c34;
 }
 article pre::before {
   content: "";
-  background: rgba(255,192,203,0.5);
+  background: #282c34;
   height: 32px;
   margin-bottom: 0;
   display: block;
