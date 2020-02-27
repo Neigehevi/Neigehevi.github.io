@@ -3,7 +3,7 @@
 
 <head>
   
-  <title>Friends - 闲云遮月 清风袭花</title>
+  <title>apache/vue/angular/react配置使用遇到的问题及解决 - 闲云遮月 清风袭花</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -11,26 +11,21 @@
   
 
   <link rel="shortcut icon" href="/images/favicon32.ico" type="image/png" />
-  <meta name="description" content="好友      匿名留言板to-me     一些网站">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Friends">
-<meta property="og:url" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;PY.html">
+  <meta name="description" content="apache&#x2F;vue&#x2F;angular&#x2F;react的配置使用时，有遇到一些小问题，记录下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="apache&#x2F;vue&#x2F;angular&#x2F;react配置使用遇到的问题及解决">
+<meta property="og:url" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;2020&#x2F;01&#x2F;28&#x2F;install&#x2F;index.html">
 <meta property="og:site_name" content="闲云遮月 清风袭花">
-<meta property="og:description" content="好友      匿名留言板to-me     一些网站">
+<meta property="og:description" content="apache&#x2F;vue&#x2F;angular&#x2F;react的配置使用时，有遇到一些小问题，记录下">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;wx4.sinaimg.cn&#x2F;large&#x2F;77d03d67ly1g9tbvfcexrj212w0bq7bp.jpg">
-<meta property="og:image" content="https:&#x2F;&#x2F;blog.catkin.moe&#x2F;images&#x2F;avatar.jpg">
-<meta property="og:image" content="https:&#x2F;&#x2F;wx1.sinaimg.cn&#x2F;large&#x2F;77d03d67ly1g9t16n1wp0j20az0azgm8.jpg">
-<meta property="og:image" content="https:&#x2F;&#x2F;wx4.sinaimg.cn&#x2F;large&#x2F;77d03d67ly1g9tbrp8sb9j20kp0i4164.jpg">
-<meta property="og:image" content="https:&#x2F;&#x2F;wx2.sinaimg.cn&#x2F;large&#x2F;77d03d67ly1g9rz66tndnj2076076mxv.jpg">
-<meta property="og:image" content="https:&#x2F;&#x2F;wx2.sinaimg.cn&#x2F;large&#x2F;77d03d67ly1g9tbd6dp7wj20ey0eaq3p.jpg">
-<meta property="og:image" content="https:&#x2F;&#x2F;wx4.sinaimg.cn&#x2F;large&#x2F;77d03d67ly1g9tbcipn0vj20fe0fet9u.jpg">
-<meta property="og:image" content="https:&#x2F;&#x2F;wx2.sinaimg.cn&#x2F;large&#x2F;77d03d67ly1g9tbcezsvwj208c08cq2t.jpg">
-<meta property="article:published_time" content="2019-12-10T10:46:25.000Z">
-<meta property="article:modified_time" content="2020-02-23T16:06:45.372Z">
+<meta property="og:image" content="f:%5CHeviblog%5Csource%5Cimages%5Cinstall%5Cxampp.png">
+<meta property="og:image" content="f:%5CHeviblog%5Csource%5Cimages%5Cinstall%5Clocalhost.png">
+<meta property="og:image" content="f:%5CHeviblog%5Csource%5Cimages%5Cinstall%5Cindexof.png">
+<meta property="article:published_time" content="2020-01-28T08:46:25.000Z">
+<meta property="article:modified_time" content="2020-02-26T23:35:04.693Z">
 <meta property="article:author" content="Neigehevi">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;wx4.sinaimg.cn&#x2F;large&#x2F;77d03d67ly1g9tbvfcexrj212w0bq7bp.jpg">
+<meta name="twitter:image" content="f:%5CHeviblog%5Csource%5Cimages%5Cinstall%5Cxampp.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
    
@@ -38,7 +33,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1582760240184">
+  <link rel="stylesheet" href="/css/style.css?v=1582760240265">
 <meta name="generator" content="Hexo 4.1.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -132,78 +127,58 @@
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        <style>
-  article ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: -5px;
-  }
-  article ul li {
-    transition: all .03s;
-    width: calc(12.5% - 10px);
-    margin: 5px;
-    border-radius: 4px;
-    border: 1px solid #eee;
-    font-size: 0;
-    overflow: hidden;
-  }
-  article ul li > a::after {
-    font-size: 13px;
-    color: #606266;
-    -webkit-transition: none;
-    transition: none;
-    content: attr(title);
-    display: block;
-    position: relative;
-    width: 100%;
-    border: none;
-    padding: 3px 10px 5px 10px;
-    margin-top: -2px;
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  article ul li img {
-    width: 100%;
-    border-radius: 0;
-    border: none;
-    height: calc(100% - 30px);
-  }
-  @media screen and (max-width: 768px) {
-    article ul li {
-      width: calc(33.3333333333% - 10px);
-    }
-}
-</style>
+        <div class="nexmoe-post">
+    <div class="nexmoe-post-cover"> 
+        
+        <img src="/images/install/install.jpg">
+        
+        <h1>apache/vue/angular/react配置使用遇到的问题及解决</h1>
+    </div>
+  <div class="nexmoe-post-meta">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年01月28日</a>
+    <a><i class="nexmoefont icon-areachart"></i>429 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+    
+    
+  </div>
+  <article>
+    <p>apache/vue/angular/react的配置使用时，有遇到一些小问题，记录下</p>
+<a id="more"></a>
 
-<div class="nexmoe-post">
-  <article class="nexmoe-py">
-    <p><img src="https://wx4.sinaimg.cn/large/77d03d67ly1g9tbvfcexrj212w0bq7bp.jpg" alt="Hevidesu"></p>
-<h2>好友</h2>
-
-<ul>
-<li><a href="https://blog.catkin.moe/" target="_blank" rel="noopener" title="Catkin"><img src="https://blog.catkin.moe/images/avatar.jpg" alt="Catkin"></a></li>
-<li><a href="https://benzina.cn/" target="_blank" rel="noopener" title="Benz1"><img src="https://wx1.sinaimg.cn/large/77d03d67ly1g9t16n1wp0j20az0azgm8.jpg" alt="Benz1"></a></li>
-</ul>
-<h2>匿名留言板to-me</h2>
-
-<ul>
-<li><a href="https://neigehevi.sarahah.com/" target="_blank" rel="noopener" title="sarahah"><img src="https://wx4.sinaimg.cn/large/77d03d67ly1g9tbrp8sb9j20kp0i4164.jpg" alt="给我留言吧"></a></li>
-</ul>
-<h2>一些网站</h2>
-
-<ul>
-<li><a href="https://bbs.hupu.com/bxj" target="_blank" rel="noopener" title="虎扑"><img src="https://wx2.sinaimg.cn/large/77d03d67ly1g9rz66tndnj2076076mxv.jpg" alt="虎扑"></a></li>
-<li><a href="https://weibo.com/" target="_blank" rel="noopener" title="新浪微博"><img src="https://wx2.sinaimg.cn/large/77d03d67ly1g9tbd6dp7wj20ey0eaq3p.jpg" alt="新浪微博"></a></li>
-<li><a href="https://adnmb2.com/Forum" target="_blank" rel="noopener" title="A岛匿名版"><img src="https://wx4.sinaimg.cn/large/77d03d67ly1g9tbcipn0vj20fe0fet9u.jpg" alt="A岛匿名版"></a></li>
-<li><a href="https://www.pixiv.net/" target="_blank" rel="noopener" title="pixiv"><img src="https://wx2.sinaimg.cn/large/77d03d67ly1g9tbcezsvwj208c08cq2t.jpg" alt="pixiv"></a></li>
-</ul>
+<h2 id="1-apache："><a href="#1-apache：" class="headerlink" title="1.apache："></a>1.apache：</h2><p>我是使用xampp软件的apache功能<img src="F:%5CHeviblog%5Csource%5Cimages%5Cinstall%5Cxampp.png" alt=""></p>
+<p><code>http://localhost/</code>默认打开的是：</p>
+<p><img src="F:%5CHeviblog%5Csource%5Cimages%5Cinstall%5Clocalhost.png" alt=""></p>
+<p>但是，要访问的是本地服务器文件：</p>
+<p><img src="F:%5CHeviblog%5Csource%5Cimages%5Cinstall%5Cindexof.png" alt=""></p>
+<p><font color=red>解决</font>：进入Config中的Apache(httpd.conf),将<code>LoadModule dir_module modules/mod_dir.so</code>注释掉。</p>
+<p><font color=red>在以下框架进行安装前，安装好NodeJS。</font></p>
+<h2 id="2-Vue"><a href="#2-Vue" class="headerlink" title="2.Vue"></a>2.Vue</h2><h3 id="1-安装vue-cli-脚手架"><a href="#1-安装vue-cli-脚手架" class="headerlink" title="1.安装vue-cli 脚手架"></a>1.安装vue-cli 脚手架</h3><p>首先要安装<a href="https://cn.vuejs.org/" target="_blank" rel="noopener" color="red">Vue</a>的脚手架，在cmd中输入<code>npm install -g vue-cli</code>安装。</p>
+<h3 id="2-新建一个vue项目模版"><a href="#2-新建一个vue项目模版" class="headerlink" title="2.新建一个vue项目模版"></a>2.新建一个vue项目模版</h3><p>接着，进入要存放项目的文件夹，输入<code>vue init webpack myProject</code>创建项目模版，<font color=red>myProject</font>是项目名称，可以自定义。</p>
+<h3 id="3-安装依赖包"><a href="#3-安装依赖包" class="headerlink" title="3.安装依赖包"></a>3.安装依赖包</h3><p>在项目目录下输入<code>cnpm install</code>，安装部分完成了。</p>
+<p>使用VScode时，打开项目文件夹，在终端中输入<code>npm run dev</code>即可进行运行项目。</p>
+<h2 id="3-Angular"><a href="#3-Angular" class="headerlink" title="3.Angular"></a>3.Angular</h2><h3 id="1-安装angular-cli"><a href="#1-安装angular-cli" class="headerlink" title="1.安装angular cli"></a>1.安装angular cli</h3><p>在cmd中输入<code>npm install -g @angular/cli</code>安装。</p>
+<h3 id="2-新建一个angular项目模版"><a href="#2-新建一个angular项目模版" class="headerlink" title="2.新建一个angular项目模版"></a>2.新建一个angular项目模版</h3><p>进入要存放项目的文件夹，输入<code>ng new myProject</code>创建项目模版，<font color=red>myProject</font>是项目名称，可以自定义。</p>
+<p>这里我遇到到问题了，cmd一直无法下载完成模版文件,</p>
+<p><font color=red>解决</font>：在Github里下载angular的<a href="https://github.com/angular/quickstart" target="_blank" rel="noopener">quickstart</a>模版可以进行代替。</p>
+<p>使用VScode时，打开项目文件夹，在终端中输入<code>npm start</code>即可进行运行项目。</p>
+<h2 id="4-React"><a href="#4-React" class="headerlink" title="4.React"></a>4.React</h2><h3 id="1-安装react-native-cli"><a href="#1-安装react-native-cli" class="headerlink" title="1.安装react-native-cli"></a>1.安装react-native-cli</h3><p>在cmd中输入<code>npm install -g react-native-cli</code>安装。</p>
+<h3 id="2-新建一个react项目模版"><a href="#2-新建一个react项目模版" class="headerlink" title="2.新建一个react项目模版"></a>2.新建一个react项目模版</h3><p>进入要存放项目的文件夹，输入<code>react-native init myProject</code>创建项目模版，<font color=red>myProject</font>是项目名称，可以自定义。</p>
+<p>使用VScode时，打开项目文件夹，在终端中输入<code>react-native start</code>即可打开开发服务器。</p>
 
   </article>
+  
+    
+<div class="nexmoe-post-copyright">
+<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+<strong>本文作者：</strong>Neigehevi<br>
+<strong>本文链接：</strong><a href="/http:/blog.neigehevi.com/2020/01/28/install/" title="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;2020&#x2F;01&#x2F;28&#x2F;install&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;2020&#x2F;01&#x2F;28&#x2F;install&#x2F;</a><br>
+
+  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+</div>
+
+
+  
   <section class="nexmoe-comment">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
 <div id="gitalk"></div>
@@ -221,7 +196,6 @@
 </script>
 </section>
 </div>
-
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
@@ -237,7 +211,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1582760240193"></script>
+<script src="/js/app.js?v=1582760240267"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
