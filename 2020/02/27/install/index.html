@@ -21,10 +21,11 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;xampp.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;localhost.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;indexof.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;mm.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;sdkdir.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;11.jpg">
 <meta property="article:published_time" content="2020-02-26T22:46:25.000Z">
-<meta property="article:modified_time" content="2020-02-27T05:03:35.783Z">
+<meta property="article:modified_time" content="2020-02-27T11:01:16.986Z">
 <meta property="article:author" content="Neigehevi">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;xampp.png">
@@ -35,7 +36,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1582779860872">
+  <link rel="stylesheet" href="/css/style.css?v=1582801311242">
 <meta name="generator" content="Hexo 4.1.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -138,7 +139,7 @@
     </div>
   <div class="nexmoe-post-meta">
     <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月27日</a>
-    <a><i class="nexmoefont icon-areachart"></i>1.1k 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>1.2k 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 5 分钟</a>
     
     
@@ -167,6 +168,9 @@
 <h2 id="4-React"><a href="#4-React" class="headerlink" title="4.React"></a>4.React</h2><h3 id="1-安装react-native-cli"><a href="#1-安装react-native-cli" class="headerlink" title="1.安装react-native-cli"></a>1.安装react-native-cli</h3><p>在cmd中输入<code>npm install -g react-native-cli</code>安装。</p>
 <h3 id="2-新建一个react项目模版"><a href="#2-新建一个react项目模版" class="headerlink" title="2.新建一个react项目模版"></a>2.新建一个react项目模版</h3><p>进入要存放项目的文件夹，输入<code>react-native init myProject</code>创建项目模版，<font color=red>myProject</font>是项目名称，可以自定义。</p>
 <p>使用VScode时，打开项目文件夹，在终端中输入<code>react-native start</code>即可打开开发服务器。</p>
+<h3 id="2-5-在模拟器上调试项目"><a href="#2-5-在模拟器上调试项目" class="headerlink" title="2.5 在模拟器上调试项目"></a><font color=red>2.5 在模拟器上调试项目</font></h3><p>我用的mumu模拟器，打开cmd输入<code>adb connect 127.0.0.1:7555</code>连接模拟器，</p>
+<p>打开模拟器，在项目安装目录下<code>react-native run-android</code>就可以将项目app安装模拟器</p>
+<p><img src="/images/install/mm.png"></img></p>
 <h3 id="3-打包app"><a href="#3-打包app" class="headerlink" title="3.打包app"></a>3.打包app</h3><h4 id="①生成签名密钥"><a href="#①生成签名密钥" class="headerlink" title="①生成签名密钥"></a>①生成签名密钥</h4><p>你可以用<code>keytool</code>命令生成一个私有密钥。在Windows上<code>keytool</code>命令放在JDK的bin目录中（比如<code>C:\Program Files\Java\jdkx.x.x_x\bin</code>），你可能需要在命令行中先进入那个目录才能执行此命令。</p>
 <pre>keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000</pre>
 <p>这条命令会要求你输入密钥库（keystore）和对应密钥的密码，然后设置一些发行相关的信息。最后它会生成一个叫做<code>my-release-key.keystore</code>的密钥库文件。</p>
@@ -286,7 +290,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1582779860878"></script>
+<script src="/js/app.js?v=1582801311245"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
