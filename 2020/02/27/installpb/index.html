@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <title>apache/vue/angular/react的配置使用时，有遇到一些小问题，记录下 - 闲云遮月 清风袭花</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+
+  <link rel="shortcut icon" href="/images/favicon32.ico" type="image/png" />
+  <meta name="description" content="apache&#x2F;vue&#x2F;angular&#x2F;react的配置使用时，有遇到一些小问题，记录下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="apache&#x2F;vue&#x2F;angular&#x2F;react的配置使用时，有遇到一些小问题，记录下">
+<meta property="og:url" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;2020&#x2F;02&#x2F;27&#x2F;installpb&#x2F;index.html">
+<meta property="og:site_name" content="闲云遮月 清风袭花">
+<meta property="og:description" content="apache&#x2F;vue&#x2F;angular&#x2F;react的配置使用时，有遇到一些小问题，记录下">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;xampp.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;localhost.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;indexof.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;mm.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;sdkdir.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;11.jpg">
+<meta property="article:published_time" content="2020-02-27T07:46:25.000Z">
+<meta property="article:modified_time" content="2020-03-08T15:45:27.572Z">
+<meta property="article:author" content="Neigehevi">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;images&#x2F;install&#x2F;xampp.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
+  <link rel="stylesheet" href="/css/style.css?v=1583682357967">
+<meta name="generator" content="Hexo 4.1.0"></head>
+
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://wx4.sinaimg.cn/large/77d03d67ly1g9srqrgoh3j20yw0lqh8q.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="Neigehevi" class="mdui-btn mdui-btn-icon"><img src="/images/avatar.png"></a>
+       </div>
+    </div>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="Neigehevi">
+            <img src="/images/avatar.png" alt="Neigehevi">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>7</div>
+        <div><span>标签</span>0</div>
+        <div><span>分类</span>0</div>
+    </div>
+    <ul class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于此站">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于此站
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="友情链接">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                友情链接
+            </div>
+        </a>
+        
+    </ul>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">社交按钮</h3>
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://twitter.com/neigehevi" target="_blank" mdui-tooltip="{content: '推特'}" style="color: rgb(0, 191, 255);background-color: rgba(0, 191, 255, .15);">
+            <i class="nexmoefont icon-twitter"></i>
+        </a><a class="mdui-ripple" href="https://weibo.com/neigehevi" target="_blank" mdui-tooltip="{content: '微博'}" style="color: rgb(255, 106, 106);background-color: rgba(255, 106, 106, .15);">
+            <i class="nexmoefont icon-weibo"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/931673" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://steamcommunity.com/id/Alice_Kuonji/" target="_blank" mdui-tooltip="{content: 'steam'}" style="color: rgb(105, 105, 105);background-color: rgba(105, 105, 105, .15);">
+            <i class="nexmoefont icon-steam"></i>
+        </a>
+    </div>
+</div>
+  
+  
+
+  
+  
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2020 Neigehevi
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <div class="nexmoe-post">
+    <div class="nexmoe-post-cover"> 
+        
+        <img src="/images/install/1.jpg">
+        
+        <h1>apache/vue/angular/react的配置使用时，有遇到一些小问题，记录下</h1>
+    </div>
+  <div class="nexmoe-post-meta">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月27日</a>
+    <a><i class="nexmoefont icon-areachart"></i>1.4k 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 6 分钟</a>
+    
+    
+  </div>
+  <article>
+    <p>apache/vue/angular/react的配置使用时，有遇到一些小问题，记录下</p>
+<a id="more"></a>
+
+<h2 id="1-apache："><a href="#1-apache：" class="headerlink" title="1.apache："></a>1.apache：</h2><p>我是使用xampp软件的apache功能</p>
+<p><img src="/images/install/xampp.png"></img></p>
+<p><code>http://localhost/</code>默认打开的是：</p>
+<p><img src="/images/install/localhost.png"></img></p>
+<p>但是，要访问的是本地服务器文件：</p>
+<p><img src="/images/install/indexof.png"></img></p>
+<p><font color=red>解决</font>：进入Config中的Apache(httpd.conf),将<code>LoadModule dir_module modules/mod_dir.so</code>注释掉。</p>
+<p><font color=red>在以下框架进行安装前，安装好NodeJS。</font></p>
+<h2 id="2-Vue"><a href="#2-Vue" class="headerlink" title="2.Vue"></a>2.Vue</h2><h3 id="1-安装vue-cli-脚手架"><a href="#1-安装vue-cli-脚手架" class="headerlink" title="1.安装vue-cli 脚手架"></a>1.安装vue-cli 脚手架</h3><p>首先要安装<a href="https://cn.vuejs.org/" target="_blank" rel="noopener" color="red">Vue</a>的脚手架，在cmd中输入<code>npm install -g vue-cli</code>安装。</p>
+<h3 id="2-新建一个vue项目模版"><a href="#2-新建一个vue项目模版" class="headerlink" title="2.新建一个vue项目模版"></a>2.新建一个vue项目模版</h3><p>接着，进入要存放项目的文件夹，输入<code>vue init webpack myProject</code>创建项目模版，<font color=red>myProject</font>是项目名称，可以自定义。</p>
+<h3 id="3-安装依赖包"><a href="#3-安装依赖包" class="headerlink" title="3.安装依赖包"></a>3.安装依赖包</h3><p>在项目目录下输入<code>cnpm install</code>，安装部分完成了。</p>
+<p>使用VScode时，打开项目文件夹，在终端中输入<code>npm run dev</code>即可进行运行项目。</p>
+<h3 id="4-在vue-cli项目中使用bootstrap"><a href="#4-在vue-cli项目中使用bootstrap" class="headerlink" title="4.在vue-cli项目中使用bootstrap"></a>4.在vue-cli项目中使用bootstrap</h3><p>1.安装插件 </p>
+<p>npm install jquery –save </p>
+<p>npm install bootstrap –save</p>
+<p>npm install popper.js –save</p>
+<p>2.如果cli版本小于v3：</p>
+<p>配置<code>webpack.base.conf.js</code></p>
+<pre>//在顶部添加
+const webpack = require('webpack')
+//在module.exports = {}末尾添加下面代码
+module.exports = {
+...
+plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    })
+  ]
+}
+</pre>
+
+<p>3.在Vue-cli v3的版本中需要使用下面的方法</p>
+<p>在根目录中添加文件<code>vue.config.js</code>，然后写入下面配置</p>
+<pre>const webpack = require('webpack')
+module.exports = {
+  configureWebpack: {
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
+      })
+    ]
+  }
+}</pre>
+
+<p>4.main.js中添加</p>
+<pre>import $ from 'jquery'
+import 'bootstrap/dist/css/bootstrap.min.css'   //我用的是3.0以下版本亲测
+import 'bootstrap/dist/js/bootstrap.min'         //3.0以下版本亲测</pre>
+
+<h2 id="3-Angular"><a href="#3-Angular" class="headerlink" title="3.Angular"></a>3.Angular</h2><h3 id="1-安装angular-cli"><a href="#1-安装angular-cli" class="headerlink" title="1.安装angular cli"></a>1.安装angular cli</h3><p>在cmd中输入<code>npm install -g @angular/cli</code>安装。</p>
+<h3 id="2-新建一个angular项目模版"><a href="#2-新建一个angular项目模版" class="headerlink" title="2.新建一个angular项目模版"></a>2.新建一个angular项目模版</h3><p>进入要存放项目的文件夹，输入<code>ng new myProject</code>创建项目模版，<font color=red>myProject</font>是项目名称，可以自定义。</p>
+<p>这里我遇到到问题了，cmd一直无法下载完成模版文件,</p>
+<p><font color=red>解决</font>：在Github里下载angular的<a href="https://github.com/angular/quickstart" target="_blank" rel="noopener">quickstart</a>模版可以进行代替。</p>
+<p>使用VScode时，打开项目文件夹，在终端中输入<code>npm start</code>即可进行运行项目。</p>
+<h2 id="4-React"><a href="#4-React" class="headerlink" title="4.React"></a>4.React</h2><h3 id="1-安装react-native-cli"><a href="#1-安装react-native-cli" class="headerlink" title="1.安装react-native-cli"></a>1.安装react-native-cli</h3><p>在cmd中输入<code>npm install -g react-native-cli</code>安装。</p>
+<h3 id="2-新建一个react项目模版"><a href="#2-新建一个react项目模版" class="headerlink" title="2.新建一个react项目模版"></a>2.新建一个react项目模版</h3><p>进入要存放项目的文件夹，输入<code>react-native init myProject</code>创建项目模版，<font color=red>myProject</font>是项目名称，可以自定义。</p>
+<p>最后还是选择了yarn来安装：</p>
+<pre>
+npm install -g yarn react-native-cli                             
+yarn config set registry https://registry.npm.taobao.org --global 
+yarn config set disturl https://npm.taobao.org/dist --global
+react-native init myProject
+</pre>
+
+<p>使用VScode时，打开项目文件夹，在终端中输入<code>react-native start</code>即可打开开发服务器。</p>
+<h3 id="2-5-在模拟器上调试项目"><a href="#2-5-在模拟器上调试项目" class="headerlink" title="2.5 在模拟器上调试项目"></a><font color=red>2.5 在模拟器上调试项目</font></h3><p>我用的mumu模拟器，打开cmd输入<code>adb connect 127.0.0.1:7555</code>连接模拟器，</p>
+<p>打开模拟器，在项目安装目录下<code>react-native run-android</code>就可以将项目app安装模拟器</p>
+<p><img src="/images/install/mm.png"></img></p>
+<h3 id="3-打包app"><a href="#3-打包app" class="headerlink" title="3.打包app"></a>3.打包app</h3><h4 id="①生成签名密钥"><a href="#①生成签名密钥" class="headerlink" title="①生成签名密钥"></a>①生成签名密钥</h4><p>你可以用<code>keytool</code>命令生成一个私有密钥。在Windows上<code>keytool</code>命令放在JDK的bin目录中（比如<code>C:\Program Files\Java\jdkx.x.x_x\bin</code>），你可能需要在命令行中先进入那个目录才能执行此命令。</p>
+<pre>keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000</pre>
+<p>这条命令会要求你输入密钥库（keystore）和对应密钥的密码，然后设置一些发行相关的信息。最后它会生成一个叫做<code>my-release-key.keystore</code>的密钥库文件。</p>
+<h4 id="②设置gradle变量"><a href="#②设置gradle变量" class="headerlink" title="②设置gradle变量"></a>②设置gradle变量</h4><ol>
+<li>把<code>my-release-key.keystore</code>文件放到你工程中的<code>android/app</code>文件夹下。</li>
+<li>编辑<code>~/.gradle/gradle.properties</code>（没有这个文件你就创建一个），添加如下的代码（注意把其中的<code>****</code>替换为相应密码）</li>
+</ol>
+<p>注意：~表示用户目录，比如windows上可能是<code>C:\Users\用户名</code>，而mac上可能是<code>/Users/用户名</code>。</p>
+<pre>
+    MYAPP_RELEASE_STORE_FILE=my-release-key.keystore
+    MYAPP_RELEASE_KEY_ALIAS=my-key-alias
+    MYAPP_RELEASE_STORE_PASSWORD=*****
+    MYAPP_RELEASE_KEY_PASSWORD=*****
+</pre>
+
+<h4 id="③添加签名到项目的gradle配置文件"><a href="#③添加签名到项目的gradle配置文件" class="headerlink" title="③添加签名到项目的gradle配置文件"></a>③添加签名到项目的gradle配置文件</h4><p>编辑项目目录下的<code>android/app/build.gradle</code>，添加如下的签名配置：</p>
+<pre>
+    ...                                  //'...'都是不需要修改或者添加的内容
+  android {
+    ...
+    defaultConfig { ... }
+    signingConfigs {
+        release {                                              //需添加
+            storeFile file(MYAPP_RELEASE_STORE_FILE)             
+            storePassword MYAPP_RELEASE_STORE_PASSWORD
+            keyAlias MYAPP_RELEASE_KEY_ALIAS
+            keyPassword MYAPP_RELEASE_KEY_PASSWORD
+        }
+    }
+    buildTypes {
+        release {
+            ...
+            signingConfig signingConfigs.release              //需添加
+        }
+    }
+  }
+  ...
+</pre>
+
+<h4 id="④生成发行APK包"><a href="#④生成发行APK包" class="headerlink" title="④生成发行APK包"></a>④生成发行APK包</h4><p>只需在终端中运行以下命令：</p>
+<p><code>cd android &amp;&amp; ./gradlew assembleRelease</code></p>
+<p>译注：cd android表示进入android目录（如果你已经在android目录中了那就不用输入了）。<code>./gradlew assembleRelease</code>在macOS、Linux或是windows的PowerShell环境中表示执行当前目录下的名为gradlew的脚本文件，且其运行参数为assembleRelease，注意这个<code>./</code>不可省略；而在windows的传统CMD命令行下则需要去掉<code>./</code>。</p>
+<p>生成的APK文件位于<code>android/app/build/outputs/apk/app-release.apk</code>。</p>
+<h4 id="⑤测试应用的发行版本"><a href="#⑤测试应用的发行版本" class="headerlink" title="⑤测试应用的发行版本"></a>⑤测试应用的发行版本</h4><p>在把发行版本提交到Play Store之前，你应该做一次最终测试。输入以下命令可以在设备上安装发行版本：</p>
+<p><code>cd android &amp;&amp; ./gradlew installRelease</code></p>
+<h3 id="5-打包app时遇到的问题"><a href="#5-打包app时遇到的问题" class="headerlink" title="5.打包app时遇到的问题"></a>5.打包app时遇到的问题</h3><p><font color=red>错误报告1：</font></p>
+<blockquote>
+<p>Error:The SDK directory ‘xxxxxxxxxx’ does not exist. Please fix the ‘sdk.dir’ property in the local.properties file</p>
+</blockquote>
+<p><font color=red>解决</font>：在react native项目的android目录下新建local.properties文件，文件内容为SDK路径：</p>
+<p><img src="/images/install/sdkdir.jpg"></img></p>
+<p>windows下记得使用双斜杠。</p>
+<p><font color=red>错误报告2：</font></p>
+<blockquote>
+<p>Failed to install the following Android SDK packages as some licences have not been accepted.<br>You have not accepted the license agreements of the following SDK components:</p>
+<p>[Android SDK Build-Tools 24, Android SDK Platform 24].Before building your project, you need to accept the license agreements and complete the installation of the missing components using the Android Studio SDK Manager.</p>
+</blockquote>
+<p>搜索了很多资料，都是说:</p>
+<ol>
+<li><p>进入到 SDK 安装目录</p>
+</li>
+<li><p>在 bin 目录下执行如下命令 ：sdkmanager.bat –licenses </p>
+</li>
+</ol>
+<p>但是这没有解决问题，最后在评论区的回复中找到了<font color=red>正解</font>：</p>
+<pre>
+    .\sdkmanager.bat "platforms;android-28"
+</pre>
+
+
+
+<p><img src="/images/install/11.jpg"></img></p>
+
+  </article>
+  
+    
+<div class="nexmoe-post-copyright">
+<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+<strong>本文作者：</strong>Neigehevi<br>
+<strong>本文链接：</strong><a href="/http:/blog.neigehevi.com/2020/02/27/installpb/" title="http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;2020&#x2F;02&#x2F;27&#x2F;installpb&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;blog.neigehevi.com&#x2F;2020&#x2F;02&#x2F;27&#x2F;installpb&#x2F;</a><br>
+
+  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+</div>
+
+
+  
+  <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '05f065921d9ced88ef43',
+        clientSecret: '7a276455d86fc9052666bdddf411ef81e1d8c097',
+        id: window.location.pathname,
+        repo: 'Neigehevi.github.io',
+        owner: 'Neigehevi',
+        admin: 'Neigehevi'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="/js/app.js?v=1583682357971"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+
+
+
+  
+
+
+
+
+
+</body>
+
+</html>
